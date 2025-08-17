@@ -68,7 +68,7 @@ The Node-RED connector supports three operation modes for interacting with EdgeX
 - The node expects `msg.payload` in **JSON Object format**, where keys are resource names and values are the data to write.
 
 #### Example Input
-```json
+```javascript
 msg.payload = {
   "AHU-TargetTemperature": "28.5", 
   "AHU-TargetBand": "4.0" 
