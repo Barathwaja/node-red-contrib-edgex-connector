@@ -16,19 +16,20 @@
     "url": "https://github.com/schneider-electric/node-red-contrib-edgex-connector"
   },
   "bugs": {
-    "url": "https://github.com/schneider-electric/node-red-contrib-edgex-connector"
+    "url": "https://github.com/schneider-electric/node-red-contrib-edgex-connector/issues"
   },
   "homepage": "https://github.com/schneider-electric/node-red-contrib-edgex-connector#readme",
   "node-red": {
     "nodes": {
-      "Edgex_Node": "./node.js"
+      "Edgex_Node": "Edgex_Node/node.js"
     }
   },
   "dependencies": {
-    "axios": "latest",
-    "mqtt": "latest"
+    "axios": "~1.6.8",
+    "mqtt": "~5.5.3"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=20.0.0",
+    "node-red": ">=2.0.0"
   }
 }

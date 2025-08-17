@@ -21,7 +21,6 @@ services:
       edgex-network: null
     volumes:
       - node-red-data:/data
-      - /tmp/edgex/secrets/node-red:/tmp/edgex/secrets/node-red:ro,z
 networks:
   edgex-network:
     name: edgex_edgex-network

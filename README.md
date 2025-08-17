@@ -1,6 +1,6 @@
 # Node-RED Connector for EdgeX
 
-This Node-RED Connector allows you to seamlessly connect Node-RED flows with [EdgeX Foundry](https://github.com/edgexfoundry) devices and services. It enables you to _read, write, and subscribe_ to device resources while securely managing credentials through EdgeX Vault. Both __secured and unsecured__ modes are supported.  
+This Node-RED Connector allows you to seamlessly connect Node-RED flows with [EdgeX Foundry](https://github.com/edgexfoundry) devices and services. It enables you to _read, write, and subscribe_ to device resources while securely managing credentials through [EdgeX Vault](https://docs.edgexfoundry.org/3.2/security/Ch-SecretStore/). Both __secured and unsecured__ modes are supported.  
 
 With this connector, you can easily integrate EdgeX data into Node-RED to:
 
@@ -10,7 +10,7 @@ With this connector, you can easily integrate EdgeX data into Node-RED to:
 - Enable smart monitoring and control of connected devices  
 
 ## Pre-requisite
-- Install [EdgeX Foundary](https://www.edgexfoundry.org/start/get-started/)
+- Install [EdgeX Foundry](https://www.edgexfoundry.org/start/get-started/)
 - Install [Node-RED](https://nodered.org/docs/getting-started/local) either locally or via Docker.
 
 ## Installation

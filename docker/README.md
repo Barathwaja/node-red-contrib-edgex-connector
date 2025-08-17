@@ -8,8 +8,18 @@ This folder provides two ways to run Node-RED using Docker:
    docker compose -f docker-compose.public.yml up -d
    ```
 
-2. For development purposes:
+   To stop the service: 
+   ```bash 
+   docker compose -f docker-compose.public.yml down
+   ```
+
+2. **For development purposes**:
     Run Node-RED with a local version of the `node-red-contrib-edgex-connector` package to test changes before publishing.  Run the below snippet:
    ```bash
    docker compose up -d
+   ```
+
+   To stop the service: 
+   ```bash
+   docker compose down
    ```

@@ -1,12 +1,10 @@
 FROM nodered/node-red:latest
-USER root
-
-WORKDIR /usr/src/node-red
-
-COPY Edgex_Node/ ./custom/
-
-RUN npm install ./custom/
 
 USER node-red
 
-EXPOSE 1880
+WORKDIR /usr/src/node-red
+
+COPY --chown=node-red:node-red package.json ./node-red-contrib-edgex-connector/
+COPY --chown=node-red:node-red Edgex_Node ./node-red-contrib-edgex-connector/Edgex_Node
+
+RUN npm install --unsafe-perm --no-update-notifier --no-fund ./node-red-contrib-edgex-connector
