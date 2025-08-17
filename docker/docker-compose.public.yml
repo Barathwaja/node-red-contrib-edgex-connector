@@ -1,5 +1,4 @@
 name: node-red-connector-edgex
-version: "3.7"
 services:
   node-red:
     build:
@@ -16,11 +15,12 @@ services:
       MESSAGEBUS_PORT: "1883"
     ports:
       - "1880:1880"
-    user: '1000:2001'
+    user: 1000:2001
     networks:
       edgex-network: null
     volumes:
       - node-red-data:/data
+      # - /tmp/edgex/secrets/node-red:/tmp/edgex/secrets/node-red:ro,z
 networks:
   edgex-network:
     name: edgex_edgex-network
