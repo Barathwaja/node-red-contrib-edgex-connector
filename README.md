@@ -1,6 +1,6 @@
 # Node-RED Connector for EdgeX
 
-This Node-RED Connector allows you to seamlessly connect Node-RED flows with [EdgeX Foundry](https://github.com/edgexfoundry) devices and services. It enables you to _read, write, and subscribe_ to device resources while securely managing credentials through [EdgeX Vault](https://docs.edgexfoundry.org/3.2/security/Ch-SecretStore/). Both __secured and unsecured__ modes are supported.
+This Node-RED Connector allows you to seamlessly connect Node-RED flows with [EdgeX Foundry](https://github.com/edgexfoundry) devices and services. It enables you to _read, write, and subscribe_ to device resources while securely managing credentials through [EdgeX secret store](https://docs.edgexfoundry.org/4.0/security/Ch-SecretStore/). Both __secured and unsecured__ modes are supported.
 
 With this connector, you can easily integrate EdgeX data into Node-RED to:
 
@@ -65,7 +65,7 @@ The Node-RED connector supports three operation modes for interacting with EdgeX
 ### Write Mode
 - Sends values to a single device resource.
 - The input port is labeled with the selected resource name.
-- The node expects `msg.payload` in **JSON Object format**, where keys are resource names and values are the data to write.
+- The node expects `msg.payload` in **JSON format**, where keys are resource names and values are the data to write.
 
 #### Example Input
 ```javascript

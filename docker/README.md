@@ -46,7 +46,7 @@ The following variables must be set. If not set, the node will default to `local
 | Variable             | Default               | Description                                                                                             |
 | -------------------- | --------------------- | ------------------------------------------------------------------------------------------------------- |
 | `TZ`                 | `Europe/Amsterdam`    | Time zone for the container. Adjust according to your local region.                                     |
-| `EDGEX_SECURITY_SECRET_STORE`  | `true`      | **Enables or disables use of the EdgeX secret store.** <br> - `true`: Retrieves credentials securely from the EdgeX Vault. <br> - `false`: Secrets are not stored securely (use only for local testing).         |
+| `EDGEX_SECURITY_SECRET_STORE`  | `true`      | **Enables or disables use of the EdgeX secret store.** <br> - `true`: Retrieves credentials securely from the EdgeX secret store. <br> - `false`: Secrets are not stored securely (use only for local testing).         |
 | `SECRETSTORE_HOST` | `edgex-secret-store`    | Hostname of the EdgeX secret store service. Must match the service name in your Docker network. This field is required when `EDGEX_SECURITY_SECRET_STORE` is set to `true`. The secrets volume can be mounted in Docker Compose at the path `/tmp/edgex/secrets/`.   |
 
 ## Security Considerations
